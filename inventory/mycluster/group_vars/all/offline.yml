@@ -2,7 +2,7 @@
 ## Global Offline settings
 ### Private Container Image Registry
 registry_host: "10.70.8.100:8090/kubespray"
-files_repo: "10.70.8.100:9000/kubespray"
+files_repo: "http://10.70.8.100:9000/kubespray"
 ### If using CentOS, RedHat, AlmaLinux or Fedora
 # yum_repo: "http://myinternalyumrepo"
 yum_repo: "http://10.70.8.100:88/Centos"
@@ -105,3 +105,4 @@ krew_download_url: "{{ files_repo }}/github.com/kubernetes-sigs/krew/releases/do
 # containerd_ubuntu_repo_base_url: "{{ ubuntu_repo }}/containerd"
 # containerd_ubuntu_repo_gpgkey: "{{ ubuntu_repo }}/containerd/gpg"
 # containerd_ubuntu_repo_repokey: 'YOURREPOKEY'
+download_run_once: True
